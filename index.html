@@ -5,89 +5,33 @@
         <title>Simple Calculator</title>
         <style>
            
-            .calc{
-                position:relative;
-                left:200px;
-                top:50px;
-                width:500px;
-                height:70vh;
-                background-color:#fafafa;
-                border:2px solid black;
-            }
-
-            .screen{
-                background-color:#c0c0c0;
-                align-self:center;
-                width:460px;
-                height:20%;
-                margin:8px 20px;
-            }
-
-            .calcarea{
-                height:77%;
-                background-color:rgb(41, 35, 35);
-                display:flex;
-            }
-            .numbers{
-                background-color:#3f5bdf;
-                width:70%;
-                height:70%;
-                margin-left:20px;
-                display:flex;
-                flex-wrap: wrap;
-            }
-            .signs{
-                background-color:#ababab;
-                margin-left:20px;
-                width:fit-content;
-                height:fit-content;
-                display:flex;
-                flex-wrap: nowrap;
-                flex-direction: column;
-                justify-content:space-between
-            }
-            .btn-number{
-                width:60px;
-                height:60px;
-                margin:8px;
-                padding:2px;
-                font-size:2rem;
-                border:1px solid black; 
-            }
-            .operator{
-                width:30px;
-                height:40px;
-                margin:8px;
-                padding:2px;
-                font-size:2rem;
-                border:1px solid black;
+            
                 
-            }
+            
         </style>
     </head>
     <body>
-        <div class="calc">
-<div class="screen"></div>
-<div class="calcarea">
-<div class="numbers">
-    <button class="btn-number">1</button>
-    <button class="btn-number">2</button>
-    <button class="btn-number">3</button>
-    <button class="btn-number">4</button>
-    <button class="btn-number">5</button>
-    <button class="btn-number">6</button>
-    <button class="btn-number">7</button>
-    <button class="btn-number">8</button>
-    <button class="btn-number">9</button>
-    <button class="btn-number">0</button>
-</div>
-<div class="signs">
-    <button class="operator">+</button>
-    <button class="operator">-</button>
-    <button class="operator">*</button>
-    <button class="operator">/</button>
-</div>
-</div>
+        <div id="calculator">
+            <input id="display" readonly>
+            <div id="keys">
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()">C</button>
+            </div>
         </div>
     </body>
 </html>
