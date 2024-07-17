@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta name="viewport" content="width=deivice-width, initial-scale=1.0">
+        <title>Simple Calculator</title>
+        <style>
+           
+            .calc{
+                position:relative;
+                left:200px;
+                top:50px;
+                width:500px;
+                height:70vh;
+                background-color:#fafafa;
+                border:2px solid black;
+            }
+
+            .screen{
+                background-color:#c0c0c0;
+                align-self:center;
+                width:460px;
+                height:20%;
+                margin:8px 20px;
+            }
+
+            .calcarea{
+                height:77%;
+                background-color:rgb(41, 35, 35);
+                display:flex;
+            }
+            .numbers{
+                background-color:#3f5bdf;
+                width:70%;
+                height:70%;
+                margin-left:20px;
+                display:flex;
+                flex-wrap: wrap;
+            }
+            .signs{
+                background-color:#ababab;
+                margin-left:20px;
+                width:fit-content;
+                height:fit-content;
+                display:flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                justify-content:space-between
+            }
+            .btn-number{
+                width:60px;
+                height:60px;
+                margin:8px;
+                padding:2px;
+                font-size:2rem;
+                border:1px solid black; 
+            }
+            .operator{
+                width:30px;
+                height:40px;
+                margin:8px;
+                padding:2px;
+                font-size:2rem;
+                border:1px solid black;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="calc">
+<div class="screen"></div>
+<div class="calcarea">
+<div class="numbers">
+    <button class="btn-number">1</button>
+    <button class="btn-number">2</button>
+    <button class="btn-number">3</button>
+    <button class="btn-number">4</button>
+    <button class="btn-number">5</button>
+    <button class="btn-number">6</button>
+    <button class="btn-number">7</button>
+    <button class="btn-number">8</button>
+    <button class="btn-number">9</button>
+    <button class="btn-number">0</button>
+</div>
+<div class="signs">
+    <button class="operator">+</button>
+    <button class="operator">-</button>
+    <button class="operator">*</button>
+    <button class="operator">/</button>
+</div>
+</div>
+        </div>
+    </body>
+</html>
